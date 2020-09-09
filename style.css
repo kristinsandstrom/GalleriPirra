@@ -8,12 +8,13 @@
 }
 
 body{
-	height:100%;
-	overflow:hidden;
+
+	overflow:auto;
 	margin:0;
 	padding:0;
 	/*background:#c7bdce;*/
-	background: linear-gradient(-180deg, #c7bdce, #c7bdce,white);
+	background: linear-gradient(-180deg, #c7bdce, #c7bdce,white,white);
+
 	
 }
 /*COMPUTER*/
@@ -95,6 +96,8 @@ body{
 	background:#c7bdce;
 	padding:0;
 	margin:0;
+	position:sticky;
+	overflow:absolute;
 }
  }
  
@@ -110,6 +113,7 @@ body{
  	background:#c7bdce;
 	padding:0;
 	margin:0;
+	position:sticky;
  }
   }
 
@@ -145,13 +149,14 @@ h1{
 	
  }
   }
+
  
   /*COMPUTER*/
-  @media screen and (min-width: 655px) { 
+ @media screen and (min-width: 655px) { 
 img{
 	padding-top:;
-	margin-top:2vh;
-	width:18%;
+	width:20%;
+	height:20%;
 	display:flex;
 	justify-content:center;
 	text-align: center; 
@@ -161,23 +166,28 @@ img{
  }
  
   /*PHONE*/
-  @media screen and (max-width: 655px) { 
+ @media screen and (max-width: 655px) { 
 img{
-	padding-top:;
-	margin-top:3vh;
-	margin-bottom:3vh;
-	width:22%;
+	width:10vh;
+	height:10vh;
 	display:flex;
 	justify-content:center;
-	text-align: center; 
+
 	
 	
 }
  }
+ 
+ 
 
 .img-place{
 	display:flex;
 	justify-content:center;
+	margin-top:0em;
+	margin-bottom:0em;
+	
+
+	
 	
 }
 
@@ -186,8 +196,7 @@ img{
 p{
 	font-family:"messapia";
 	font-weight:normal;
-	font-size:6vw;
-	transform:rotateX:60deg;
+	font-size:5.6vw;
 	display:flex;
 	justify-content:center;
 	padding:0;
