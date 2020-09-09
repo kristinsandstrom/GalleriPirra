@@ -9,7 +9,7 @@
 
 body{
 
-	overflow:auto;
+	overflow:scroll;
 	margin:0;
 	padding:0;
 	/*background:#c7bdce;*/
