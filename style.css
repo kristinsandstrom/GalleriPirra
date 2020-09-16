@@ -47,7 +47,15 @@ body{
  }
   }
  
-
+ h4{
+   	font-family:georgia;
+   	font-weight:normal;
+	font-size:5.6vw;
+	display:flex;
+	justify-content:center;
+	padding:0;
+	margin:0;
+  }
 
 .scroll{
 	transform:rotateX:60deg;
@@ -155,8 +163,8 @@ h1{
  @media screen and (min-width: 655px) { 
 img{
 	padding-top:;
-	width:17%;
-	height:17%;
+	width:13%;
+	height:13%;
 	display:flex;
 	justify-content:center;
 	text-align: center; 
@@ -196,7 +204,7 @@ img{
 p{
 	font-family:"messapia";
 	font-weight:normal;
-	font-size:5.6vw;
+	font-size:4.5vw;
 	display:flex;
 	justify-content:center;
 	padding:0;
@@ -280,6 +288,11 @@ a:hover, a:active {
 	color:	#97ab92;
 	background-color:transparent;
 	text-de
+}
+
+#ref1{
+	font-family:georgia;
+	font-size:3vw;
 }
 
 #name{
