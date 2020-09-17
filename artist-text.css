@@ -1,0 +1,187 @@
+@font-face{
+	font-family:"messapia";
+	src: url("font/messapia.otf") format("opentype");
+}
+
+body{
+
+	overflow:scroll;
+	margin:0;
+	padding:0;
+	/*background:#c7bdce;*/
+	background:#d8d8d8 ;
+
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 1000px) { 
+.text{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:8em;
+	padding-right:8em;
+}
+
+h1{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:35px;
+	line-height:55px;
+
+}
+
+.materials{
+	font-size:35px;
+	line-height:55px;
+}
+
+#ref1{
+	font-size:25px;
+	color:blue;
+	
+
+}
+
+#ref2{
+	font-size:25px;
+	color:blue;
+
+}
+
+#fnr1{
+	font-size:20px;
+	color:blue;
+}
+#fnr2{
+	font-size:20px;
+	color:blue;
+}
+ }
+
+ /*PHONE*/
+ @media screen and (max-width: 1000px) { 
+ .text{
+ 	padding-top:40px;
+ 	padding-bottom:2vh;
+ 	padding-left:1.5em;
+ 	padding-right:1.5em;
+ }
+
+ h1{
+ 	font-family:georgia;
+ 	font-weight:normal;
+ 	font-size:5vw;
+ 	line-height:7.5vw;
+ }
+ 
+ .materials{
+  	font-size:5vw;
+  	line-height:7vw;
+	margin-left:5vw;
+ }
+ 
+ #ref1{
+ 	font-size:4vw;
+ 	color:blue;
+	
+ }
+
+ #ref2{
+ 	font-size:4vw;
+ 	color:blue;
+	
+ }
+ #fnr1{
+ 	font-size:3vw;
+ 	color:blue;
+ }
+ #fnr2{
+ 	font-size:3vw;
+ 	color:blue;
+ }
+ 
+ #arrow{
+	 font-size:6vw;
+ }
+  }
+  
+  /*COMPUTER*/
+  @media screen and (min-width: 655px) { 
+  .header{
+	
+  	display:flex;
+  	flex-direction:row;
+  	justify-content:center;
+  	margin-top:0%;
+  	box-size:10vh;
+  	height:10%;
+  	background:#d8d8d8;
+  	padding:0;
+  	margin:0;
+  	position:sticky;
+  	overflow:absolute;
+  }
+   }
+ 
+   /*PHONE*/
+   @media screen and (max-width: 655px) { 
+   .header{
+	
+   	display:flex;
+   	flex-direction:row;
+   	justify-content:center;
+   	margin-top:0%;
+   	box-size:10vw;
+   	height:10vw;
+   	background:#d8d8d8;
+  	padding:0;
+  	margin:0;
+  	position:sticky;
+   }
+    }
+	
+	/*COMPUTER*/
+	@media screen and (min-width: 655px) { 
+	.pirra{
+		font-family:"messapia";
+		font-size:10vh;
+		line-height:10vh;
+		display:flex;
+		justify-content:center;
+		padding:0;
+		margin:0;
+
+	
+	}
+	 }
+	 /*PHONE*/
+	 @media screen and (max-width: 655px) { 
+	.pirra{
+	font-family:"messapia";
+		font-size:7vw;
+		line-height:10vw;
+		display:flex;
+		justify-content:center;
+		padding:0;
+		margin:0;
+
+	
+	}
+	}
+
+
+
+
+
+a:link, a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	color:	#97ab92;
+	background-color:transparent;
+	text-de
+}
