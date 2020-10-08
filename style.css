@@ -2,308 +2,385 @@
 	font-family:"messapia";
 	src: url("font/messapia.otf") format("opentype");
 }
-@font-face{
-	font-family:"sprat";
-	src: url("font/Sprat-Variable.ttf") format("truetype");
-}
 
-body{
 
-	overflow:scroll;
-	margin:0;
-	padding:0;
-	/*background:#c7bdce;*/
-	background: linear-gradient(-180deg, #c7bdce, #c7bdce,white,white);
-
+html{
+	 background:#f7f7f7; 
+	 overflow:none;
+	 cursor:default;
 	
 }
-/*COMPUTER*/
-@media screen and (min-width: 655px) { 
-.Loop {
-  position: relative;
-  height: 100%;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  text-align:left;
-  width:100%;
-  margin:auto;
-  font-weight:bold;
-  
-}
- }
- 
- /*PHONE*/
- @media screen and (max-width: 655px) { 
- .Loop {
-   position: relative;
-   height: 100%;
-   overflow: auto;
-   -webkit-overflow-scrolling: touch;
-   text-align:left;
-   width:100%;
-   margin:auto;
-   font-weight:bold;
-  
- }
-  }
- 
- h4{
-   	font-family:georgia;
-   	font-weight:normal;
-	font-size:5.6vw;
+
+.main{
 	display:flex;
-	justify-content:center;
-	padding:0;
-	margin:0;
-  }
-
-.scroll{
-	transform:rotateX:60deg;
-	translate3d:0px, -18009px, 0px;
-}
-
-/*COMPUTER*/
-@media screen and (min-width: 655px) { 
-.pirra{
-	
-	font-size:10vh;
-	line-height:10vh;
-	display:flex;
-	justify-content:center;
-	padding:0;
-	margin:0;
-
+	flex-direction:column;
+	justify-content:space-between;
 	
 }
- }
- /*PHONE*/
- @media screen and (max-width: 655px) { 
-.pirra{
-	
-	font-size:10vw;
-	line-height:10vw;
-	display:flex;
-	justify-content:center;
-	padding:0;
-	margin:0;
 
-	
+.top{
+	position:sticky;
 }
-}
-
 
 /*COMPUTER*/
 @media screen and (min-width: 655px) { 
 .header{
 	display:flex;
-	flex-direction:row;
 	justify-content:center;
-	margin-top:0%;
-	box-size:10vh;
-	height:10%;
-	background:#c7bdce;
-	padding:0;
-	margin:0;
-	position:sticky;
-	overflow:absolute;
+	height:16vh;
+	border-bottom: 1px solid black;
+}   
 }
- }
- 
- /*PHONE*/
- @media screen and (max-width: 655px) { 
- .header{
- 	display:flex;
- 	flex-direction:row;
- 	justify-content:center;
- 	margin-top:0%;
- 	box-size:10vw;
- 	height:10vw;
- 	background:#c7bdce;
-	padding:0;
-	margin:0;
-	position:sticky;
- }
-  }
 
-.gif{
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.header{
 	display:flex;
-	flex-direction:row;
 	justify-content:center;
+	height:25vh;
+	border-bottom: 1px solid black;
+}   
 }
+
+.wrapper{
+	border-bottom: 1px solid black;
+	/*height:5vh;*/
+	
+}
+
+.info-text{
+	display:none;
+}
+
+.exhibition-text{
+	display:none;
+}
+
+
+.foot{
+    
+    bottom: 5%;
+
+    width: 100%;
+    text-align: center;
+	transition: 1s ease-in-out;	
+	cursor:pointer;
+
+	
+}
+
+.foot:hover{
+	-webkit-transform: translateX(1.5em);
+	transform: translateX(1.5em);
+}
+
+.logo{
+	transition: 1s ease-in-out;	
+}
+
+.logo:hover{
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.logo a:link,.logo a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:default;
+}
+.logo a:hover,.logo a:active {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:default;
+}
+
+
+/* TEXT STYLE */
 
 
 /*COMPUTER*/
-@media screen and (min-width: 600px) { 
-
+@media screen and (min-width: 655px) { 
 h1{
 	font-family:"messapia";
+	color:black;
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h1{
+	font-family:"messapia";
+	color:black;
+	font-size:9vw;
+	margin-left:1vw;
+}	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+h2{
+	font-family:georgia;
 	font-weight:normal;
-	font-size:11vw;
-	position:absolute;
+	font-size:24px;
+	margin-left:10vw;
+	height:4vh;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h2{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:20px;
+	margin-left:1vw;
+	height:3.5vh;
+	
+}
+}
+
+/* link to h2 */
+
+a:link, a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+a:hover, a:active {
+	color:	#5c87ff;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+/* link to h2 */
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+h3{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+h3{
+	font-family:georgia;
+	font-weight:normal;
+	font-size:20px;
+	line-height:30px;
+	color:	#5c87ff;
+	margin-bottom:1vw;
+	margin-top:1vw;
+}
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-left:10vw;
+	margin-right:10vw;
+}
+}
+
+/*COMPUTER*/
+@media screen and (max-width: 655px) { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-left:1vw;
+	margin-right:1vw;
+}
+}
+.projects{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	
 	
 	
 }
- }
- 
- /*PHONE*/
- @media screen and (max-width: 600px) { 
 
- h1{
- 	font-family:"messapia";
- 	font-weight:normal;
- 	font-size:1;
- 	position:absolute;
-	
-	
- }
-  }
-
- 
-  /*COMPUTER*/
- @media screen and (min-width: 655px) { 
-img{
-	padding-top:;
-	width:13%;
-	height:13%;
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.container-1{
 	display:flex;
-	justify-content:center;
-	text-align: center; 
-	
-	
+	justify-content:space-between;
+	margin-left:10vw;
+	margin-right:10vw;
+	border-top: 1px solid #5c87ff;
+}	
 }
- }
- 
-  /*PHONE*/
- @media screen and (max-width: 655px) { 
-img{
-	width:10vh;
-	height:10vh;
-	display:flex;
-	justify-content:center;
 
-	
-	
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.container-1{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	margin-left:1vw;
+	margin-right:1vw;
+	border-top: 1px solid #5c87ff;
+	margin-bottom:1vw;
+}	
 }
- }
- 
- 
 
-.img-place{
-	display:flex;
-	justify-content:center;
-	margin-top:0em;
-	margin-bottom:0em;
-	
 
-	
+h3 a:link,h3 a:visited {
+	color:#5c87ff;
+	background-color:transparent;
+	text-decoration:none;
+	cursor:cell;
+}
+
+h3 a:hover,h3 a:active {
+	color:	#5c87ff;
+	background-color:transparent;
+	text-decoration:underline;
+	cursor:cell;
+}
+
+
+
+.line{
+	border-bottom: 1px solid black;
+}
+
+h4{
+	font-family:georgia;
+	font-weight:normal;
 	
 }
 
 /*COMPUTER*/
 @media screen and (min-width: 655px) { 
 p{
-	font-family:"messapia";
+	font-family:georgia;
 	font-weight:normal;
-	font-size:4.5vw;
+	font-size:20px;
+	line-height:34px;
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+p{
+	font-family:georgia;
+	font-weight:normal;
+ 	font-size:20px;
+ 	line-height:30px;
+}	
+}
+
+#moving{
+	margin-top:4vh;
+}
+
+/*exhibition style*/
+
+.first{
 	display:flex;
-	justify-content:center;
-	padding:0;
-	margin:0;
+	padding-top:50px;
+	width:100%;
+}
+
+.location{
+	width:50%;
+	padding-left:10%;
+	padding-right:1%;
+}
+.exhibition-name{
+	width:50%;
+	padding-right:10%;
+	padding-left:1%;
+}
+
+.second{
+	display:flex;
 	
+	padding-top:50px;
 	
 }
- }
- 
- /*PHONE*/
- @media screen and (max-width: 655px) { 
- p{
- 	font-family:"messapia";
- 	font-weight:normal;
- 	font-size:6vw;
- 	transform:rotateX:60deg;
- 	display:flex;
- 	justify-content:center;
- 	padding:0;
- 	margin:0;
-	
-	
- }
-  }
-  /*PHONE*/
-  @media screen and (max-width: 655px) { 
-.plats	  {
-	font-size:2vw;
-} 
- } 
- 
+
 
 /*COMPUTER*/
-@media screen and (min-width: 1000px) { 
-h3{
-	font-family:"messapia";
-	font-weight:normal;
-	font-size:2vw;
-	line-height:2.5vw;
-	display:flex;
-	justify-content:center;
-	padding:0;
-	margin-left:15vw;
-	margin-right:15vw;
-	
-	
-}
- }
- 
- /*PHONE*/
- @media screen and (max-width: 1000px) { 
- h3{
- 	font-family:"messapia";
- 	font-weight:normal;
- 	font-size:3vw;
-	line-height:3.5vw;
- 	display:flex;
- 	justify-content:center;
- 	padding:0;
- 	margin-left:2vw;
- 	margin-right:2vw;
-	
-	
- }
-  }
-  
-.location{
-	padding-bottom:5em;
-}  
-
-
- 
-
-a:link, a:visited {
-	color:black;
-	background-color:transparent;
-	text-decoration:none;
+@media screen and (min-width: 655px) { 
+.images{
+	width:100%;
+	padding-left:1%;
+	padding-right:1%;
+	flex-direction:row;
+    background-color: ;
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+    color: black;
+    position: center;
+}    
 }
 
-a:hover, a:active {
-	color:	#97ab92;
-	background-color:transparent;
-	text-de
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.images{
+	display:none;
+}    
 }
 
-#ref1{
-	font-family:georgia;
-	font-size:3vw;
-}
-
-#name{
-	font-family:"sprat";
-	font-weight:normal;
-	
-}
-
-
-
-
-::-webkit-scrollbar {
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.imagesphone{
 	display:none;
 }
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+	.imagesphone{
+		width:100%;
+		padding-left:1%;
+		padding-right:1%;
+		flex-direction:row;
+	    background-color: ;
+	    overflow: auto;
+	    white-space: nowrap;
+	    display: inline-block;
+	    color: black;
+	    position: center;
+	}
+	}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.text{
+	width:50%;
+	margin-left:10vw;
+	margin-top:5vw;
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.text{
+	margin-right:2vw;
+	margin-left:2vw;
+	margin-top:10vw;
+}	
+}
+
+
+
+
+
