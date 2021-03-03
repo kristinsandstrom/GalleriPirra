@@ -11,11 +11,35 @@ html{
 	
 }
 
+body{
+	margin:0;
+}
+
 .main{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
 	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.indextransition{
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px){ 
+.indextransition{
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
 }
 
 .top{
@@ -43,7 +67,9 @@ html{
 }
 
 .wrapper{
+	/* underline */
 	border-bottom: 1px solid black;
+	
 	/*height:5vh;*/
 	
 }
@@ -114,7 +140,7 @@ h1{
 h1{
 	font-family:"messapia";
 	color:black;
-	font-size:9vw;
+	font-size:7vw;
 	margin-left:1vw;
 }	
 }
@@ -168,6 +194,7 @@ h3{
 	font-family:georgia;
 	font-weight:normal;
 	color:	#5c87ff;
+	
 }
 }
 
@@ -181,36 +208,15 @@ h3{
 	color:	#5c87ff;
 	margin-bottom:1vw;
 	margin-top:1vw;
+	margin-left:2vw;
 }
 }
 
-/*COMPUTER*/
-@media screen and (min-width: 655px) { 
-.about{
-	font-family:georgia;
-	font-weight:normal;
-	color:	#5c87ff;
-	margin-left:10vw;
-	margin-right:10vw;
-}
-}
 
-/*COMPUTER*/
-@media screen and (max-width: 655px) { 
-.about{
-	font-family:georgia;
-	font-weight:normal;
-	color:	#5c87ff;
-	margin-left:1vw;
-	margin-right:1vw;
-}
-}
 .projects{
 	font-family:georgia;
 	font-weight:normal;
-	color:	#5c87ff;
-	
-	
+	color:	#5c87ff;	
 	
 }
 
@@ -222,6 +228,12 @@ h3{
 	margin-left:10vw;
 	margin-right:10vw;
 	border-top: 1px solid #5c87ff;
+    
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+	
 }	
 }
 
@@ -235,7 +247,53 @@ h3{
 	margin-right:1vw;
 	border-top: 1px solid #5c87ff;
 	margin-bottom:1vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
 }	
+}
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-left:10vw;
+	margin-right:10vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px)  { 
+.about{
+	font-family:georgia;
+	font-weight:normal;
+	color:	#5c87ff;
+	margin-right:1vw;
+	margin-left:2vw;
+	
+	animation-duration: 1.7s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+
+	
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px)  { 
+.info-text{
+	margin-left:2vw;
+}
 }
 
 
@@ -269,9 +327,10 @@ h4{
 @media screen and (min-width: 655px) { 
 p{
 	font-family:georgia;
-	font-weight:normal;
-	font-size:20px;
-	line-height:34px;
+	font-weight:normal(200);
+	font-size:22px;
+	line-height:30px;
+	
 }	
 }
 
@@ -279,8 +338,8 @@ p{
 @media screen and (max-width: 655px) { 
 p{
 	font-family:georgia;
-	font-weight:normal;
- 	font-size:20px;
+	font-weight:normal(200);
+ 	font-size:22px;
  	line-height:30px;
 }	
 }
@@ -290,6 +349,26 @@ p{
 }
 
 /*exhibition style*/
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.exhibitiontransition{
+    animation-duration: 3s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+}
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px){ 
+.exhibitiontransition{
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInUp;
+}
+}
 
 .first{
 	display:flex;
@@ -313,6 +392,36 @@ p{
 	
 	padding-top:50px;
 	
+}
+
+
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.container-2{
+	display:flex;
+	justify-content:space-between;
+	margin-left:10vw;
+	margin-right:10vw;
+	border-top: 1px solid #5c87ff;
+    
+
+	
+}	
+}
+
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.container-2{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	margin-left:1vw;
+	margin-right:1vw;
+	border-top: 1px solid #5c87ff;
+	margin-bottom:1vw;
+	
+	
+}	
 }
 
 
@@ -382,7 +491,42 @@ p{
 }	
 }
 
+.question{
+	color:#5c87ff;
+}
+
+.answear{
+	margin-left:3vw;
+}
 
 
 
+
+/* Animation transition fade in right */
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+	
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Animation transition fade in up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0.5;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 
