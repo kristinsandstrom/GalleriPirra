@@ -8,11 +8,15 @@ html{
 	 background:#f7f7f7; 
 	 overflow:none;
 	 cursor:default;
+ 
 	
 }
 
 body{
 	margin:0;
+ 	overscroll-behavior: none; /* default */
+ 	overscroll-behavior-x: none;
+ 	overscroll-behavior-y: none;
 }
 
 .main{
@@ -340,7 +344,7 @@ p{
 	font-family:georgia;
 	font-weight:normal(200);
  	font-size:18px;
- 	line-height:26px;
+ 	line-height:25px;
 }	
 }
 
@@ -392,6 +396,10 @@ p{
 	
 	padding-top:50px;
 	
+}
+
+#ref1, #ref2{
+	line-height:0;
 }
 
 
@@ -474,7 +482,7 @@ p{
 /*COMPUTER*/
 @media screen and (min-width: 655px) { 
 .text{
-	width:50%;
+	width:60vw;
 	margin-left:10vw;
 	margin-top:5vw;
 	margin-bottom:10vw;
@@ -499,7 +507,25 @@ p{
 	margin-left:3vw;
 }
 
+/*COMPUTER*/
+@media screen and (min-width: 655px) { 
+.ingress{
+	color:#5c87ff;
+	margin-left:10vw;
+	margin-right:10vw;
+	margin-top:2vw;
+	
+}
+}
 
+/*PHONE*/
+@media screen and (max-width: 655px) { 
+.ingress{
+	color:#5c87ff;
+	margin-left:2vw;
+	margin-right:2vw;	
+}
+}
 
 
 /* Animation transition fade in right */
